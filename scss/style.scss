@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1;
+}
+main {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    font-family: "微軟正黑體";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+select,input {
+    font-family: "微軟正黑體";
+    outline: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+
+//內容
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #293239;
+
+    body{
+        width: 100%;
+        min-width: 1000px;
+        height: 100%;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            height: 100%;
+
+            article {
+                width: 100%;
+                min-width: 1000px;
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logo {
+                    width: 30.63%;
+                    height: 19.7%;
+                    background: url('../images/logo.png') no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    top: 6.5%;
+                    right: 22%;
+                    z-index: 10;
+                }
+
+                label {
+                    display: block;
+                    width: 14.55%;
+                    height: 0;
+                    padding-top: 10%;
+                    position: absolute;
+                    z-index: 10;
+
+                    &.acc {
+                        top: 29.5%;
+                        right: 35.1%;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        background: #ffffffc9;
+                        border-radius: 5px;
+                        border: solid 2px #ffffff;
+                        color: #5d3807;
+                        font-size: 20px;
+                        text-align: center;
+                        padding-left: 10px;
+
+                        &::placeholder {
+                            color: #5d3807;
+                        }
+                    }
+                }
+
+                .inputbox {
+                    width: 14.55%;
+                    height: 11.5%;
+                    position: absolute;
+                    top: 29.5%;
+                    right: 35%;
+                    z-index: 10;
+
+                    .box {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        label {
+                            display: block;
+                            width: 14.55%;
+                            height: 10%;
+                            position: absolute;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                background: #ffffffc9;
+                                border-radius: 5px;
+                                border: solid 2px #ffffff;
+                                color: #5d3807;
+                                font-size: 20px;
+                                text-align: center;
+                                padding-left: 10px;
+
+                                &::placeholder {
+                                    color: #5d3807;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 85.5%;
+                        height: 52%;
+                        background: linear-gradient(to top,#652539 0%,#c05476 100%);
+                        border-radius: 10px;
+                        border: solid 2px #ffe762;
+                        box-shadow: 0 5px 10px 2px #00000080;
+                        color: #ffffff;
+                        font-size: 25px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        display: block;
+                        margin: 20px auto 0;
+
+                        &:hover,&:active,&.active {
+                            background: linear-gradient(to top,#962649 0%,#771c38 100%);
+                        }
+                    }
+                }
+
+                .img1 {
+                    width: 50%;
+                    height: 103%;
+                    background: url('../images/img1.png') no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    left: 7.5%;
+                    top: 0;
+                    animation: img1 0.6s linear 0s;
+                    z-index: 1;
+
+                    // &::before {
+                    //     content: "";
+                    //     position: absolute;
+                    //     left: 0;
+                    //     top: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background: url('../images/img1.png') no-repeat;
+                    //     animation: lag 0.4s linear 0s,img2 0.6s linear 0.4s;
+                    //     opacity: 0;
+                    // }
+                }
+            }
+        }
+        //背景
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-width: 1000px;
+            height: 100%;
+            background: url('../images/bg.jpg') no-repeat top center;
+            background-size: 100%;
+            z-index: -999;
+        }
+    }
+}
+@keyframes img1 {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(-720deg);
+    }
+
+    80% {
+        transform: scale(1.2) rotate(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes img2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1.2);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+@keyframes lag {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
