@@ -85,20 +85,20 @@ html {
 
                 .logo {
                     width: 30.63%;
-                    height: 19.7%;
+                    height: 0;
                     background: url('../images/logo.png') no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     position: absolute;
                     top: 6.5%;
                     right: 22%;
                     z-index: 10;
+                    padding-top: 9.9%;
                 }
 
                 label {
                     display: block;
                     width: 14.55%;
-                    height: 0;
-                    padding-top: 10%;
+                    height: 5.1%;
                     position: absolute;
                     z-index: 10;
 
@@ -185,14 +185,15 @@ html {
 
                 .img1 {
                     width: 50%;
-                    height: 103%;
+                    height: 0;
                     background: url('../images/img1.png') no-repeat;
-                    background-size: contain;
+                    background-size: 100%;
                     position: absolute;
                     left: 7.5%;
                     top: 0;
                     animation: img1 0.6s linear 0s;
                     z-index: 1;
+                    padding-top: 52%;
 
                     // &::before {
                     //     content: "";
